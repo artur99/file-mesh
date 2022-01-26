@@ -1,0 +1,10 @@
+{
+  "nodes": [
+    {"name": "node1", "storage": "./.storage/n1/"},
+    {"name": "node2", "storage": "./.storage/n2/"},
+    {"name": "node3", "storage": "./.storage/n3/"},
+    {"name": "node4", "storage": "./.storage/n4/"},
+    {"name": "node5", "storage": "./.storage/n5/"},
+    {"name": "node6", "storage": "./.storage/n6/"}
+  ]
+}

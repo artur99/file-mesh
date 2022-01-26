@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>FileMesh</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="files">
+    <div class="container">
+        <div class="left">
+            <div class="ltop">
+                <div class="logo btn" title="Distributed Cloud Storage">
+                    <span class="material-icons">cloud</span>
+                </div>
+            </div>
+            <div class="lmid lmenu">
+                <a class="item active" href="/">
+                    <span class="material-icons">folder_open</span>
+                </a>
+                <a class="item" href="/nodes">
+                    <span class="material-icons">timeline</span>
+                </a>
+            </div>
+            <div class="lbtm"></div>
+        </div>
+        <div class="middle">
+            <h2>
+                <a href="#" class="btn upload-btn"> <span class="material-icons">upload</span> </a>
+
+                Your files <small class="loading-inforer">(Loading...)</small>
+                <a href="#" class="btn refresh-btn"> <span class="material-icons">refresh</span> </a>
+            </h2>
+            <div class="file-container">
+                <i>Loading files...</i>
+                <!-- <div class="file active">
+                    <div class="icon"><span class="material-icons">description</span></div>
+                    <div class="name">MyDoc.txt</div>
+                    <div class="actions">
+                        <a href="#"><span class="material-icons">delete</span></a>
+                    </div>
+                </div>
+                <div class="file">
+                    <div class="icon"><span class="material-icons">insert_drive_file</span></div>
+                    <div class="name">OtherDoc.txt</div>
+                    <div class="actions">
+                        <a href="#"><span class="material-icons">delete</span></a>
+                    </div>
+                </div>
+                <div class="file">
+                    <div class="icon"><span class="material-icons">insert_drive_file</span></div>
+                    <div class="name">fisier de spatiere.txt</div>
+                    <div class="actions">
+                        <a href="#"><span class="material-icons">delete</span></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="right">
+            <div class="screens">
+                <div class="screen-upload">
+                    <h2>Upload a file...</h2>
+                    <br><br>
+
+                    <input type="file" id="file-input" />
+                    <!-- <br> -->
+                    <!-- Replica count: <input type="number" step="1" min="2" max="5" value="3" /> -->
+                    <br><br>
+                    <p class="small">File will be saved in 3 different locations and automatically recovered in case of failiure...</p>
+
+                    <a href="#" class="btn upload action-upload-file">Upload</a>
+                </div>
+                <div class="screen-file" style="display: none">
+                    <h2>File info</h2>
+                    <div class="file-icon">
+                        <span class="material-icons">description</span>
+                    </div>
+                    <h3 class="name">MyDoc.docx</h3>
+                    <p class="id">123</p>
+                    <br><br>
+                    <p>Size: <span class="size">32KB</span></p>
+                    <p>Date added: <span class="date-added">22.07.2021 14:32:19</span></p>
+                    <p>Status: <span class="health">Healthy</span></p>
+                    <p>Replicas (<span class="replica">3</span>): </p>
+                    <div class="replica-list">
+                        <span class="replica-entry">1</span>
+                        <span class="replica-entry">4</span>
+                        <span class="replica-entry">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>

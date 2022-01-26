@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>FileMesh</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="nodes">
+    <div class="container">
+        <div class="left">
+            <div class="ltop">
+                <div class="logo btn" title="Distributed Cloud Storage">
+                    <span class="material-icons">cloud</span>
+                </div>
+            </div>
+            <div class="lmid lmenu">
+                <a class="item" href="/">
+                    <span class="material-icons">folder_open</span>
+                </a>
+                <a class="item active" href="/nodes">
+                    <span class="material-icons">timeline</span>
+                </a>
+            </div>
+            <div class="lbtm"></div>
+        </div>
+        <div class="middle">
+            <h2>
+                Available nodes <small class="loading-inforer">(Loading...)</small>
+                <a href="#" class="btn refresh-btn"> <span class="material-icons">refresh</span> </a>
+            </h2>
+            <div class="nodes-container">
+                <!-- <i>Loading nodes...</i> -->
+                <div class="node">
+                    <div class="icon"><span class="material-icons">cloud</span></div>
+                    <div class="name">node1</div>
+                    <div class="meta">10 <span class="material-icons">insert_drive_file</span></div>
+                    <div class="health">Healthy</div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="screens">
+                <div class="screen-node">
+                    <h2>node1</h2>
+                    <div class="file-icon">
+                        <span class="material-icons">cloud</span>
+                    </div>
+                    <br><br>
+                    <p>Alive: <span class="alive">ON</span></p>
+                    <p>Healthy: <span class="healthy">true</span></p>
+                    <p>File Count: <span class="file-count">3</span> files</p>
+                    <p>
+                        Last Ping: <span class="last-ping">...</span> <br>
+                        First Start: <span class="first-start">...</span> <br>
+                        Last Start: <span class="last-start">...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+    <script src="nodes.js"></script>
+</body>
+</html>
