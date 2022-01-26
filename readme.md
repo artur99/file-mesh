@@ -28,19 +28,26 @@ Each node connects to the master at startup, identifying themselves with their c
 
 The master iterates trough the connected nodes (keeping track of their connection states and pings), and periodically sends a request for meta (nodes responding with metadata for their file list). The master then generates the entire file mesh and makes it available in a HTTP API readable by the web client.
 
-<img src="./docs/diagram.png?" width="500">
+<img src="./docs/diagram_white.png" width="500">
 
 
 ## Screenshots
 
 <a href="./docs/ss1.png"><img src="./docs/ss1.png" width="600"></a>
+
 Alert after adding a file.
 
+
 <a href="./docs/ss2.png"><img src="./docs/ss2.png" width="600"></a>
+
 File list and metadata for file `background.jpg` (stored on nodes: 4, 5 and 6).
 
+
 <a href="./docs/ss3.png"><img src="./docs/ss3.png" width="600"></a>
+
 Node statuses page.
 
+
 <a href="./docs/ss4.png"><img src="./docs/ss4.png" width="600"></a>
+
 Logs from the master after node2 was killed.
