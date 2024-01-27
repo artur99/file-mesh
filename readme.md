@@ -1,6 +1,8 @@
 # Distributed File Storage
 University project implementing a basic prototype for a distributed file storage with multiple replica storage, with redistribution on failovers. Any node node can die and the system will still work. Master node stores no data persistently and generates the file mesh from the nodes' data.
 
+A TS refactor of the project was made here: [file-mesh-ts](https://github.com/artur99/file-mesh-ts).
+
 ## Installation
 Project is written in node (so `npm` and `node` are requirements). Installing npm dependencies:
 ```bash
